@@ -1,238 +1,202 @@
 html, body {
-margin: 0;
-padding: 0;
-height: 100%;
-width: 100%;
-background-color: grey;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
 }
-
 
 .container {
-  min-height: 100%;
-  min-width: 100%;
-  position: fixed;
-
+	min-height: 100%;
+	min-width: 100%;
+	position: fixed;
 }
+
 .main-wrapper {
-  background-image: url(../res/greybck.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-   min-height:100%;
-   position:relative
+	background-image: url(../res/greybck.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	min-height: 100%;
+	position: relative
 }
+
 .wrap-header {
-  background-color: white;
-  margin: 0;
-
-
-}
-.nav-bar-div {
-  height: 100px;
-  max-height: 100px;
-  background-color:#3EA055;
-  margin-top: 0;
-}
-/*.slideshow-container {
-  height:100px;
-}*/
-.nav {
-  background-color:#3A3A3A;
-   overflow: hidden;
-   width:100%;
-   max-height: 120px;
-   position: sticky;
+	background-color: white;
+	margin: 0;
 }
 
 
-.nav img {
-  float: left;
-  height: 100px;
-  padding-left:10px;
-  padding-top:10px;
-
+.navbar-nav {
+	text-fill: #000;
 }
 
-.nav a {
-  display: block;
-  color: white;
-  text-align: center;
-float: right;
-padding-top: 3%;
-height:100px;
-max-height: 100px;
-width:200px;
-  text-decoration: none;
-  font-size: 24px;
+.navbar-nav li a {
+    margin: 20px 17px 0 17px;
 }
+
+.navbar-header .navbar-brand {
+    margin-top: 11px;
+    margin-left: 95%;
+	
+}
+
 .nav a:hover {
-  color: #f2f2f2;
-background-color: #3EA055;
-
+	color: #f2f2f2;
+	background-color: #3EA055;
 }
+
 .banner {
+	
 }
 
-.div-1{
-  background-color:#3A3A3A;
-   width:60%;
-height:60%;
-margin:20%;
-margin-top: 10%;
-border: 5px;
-min-height: 200px;
-overflow: hidden;
-border: 1px solid;
-border-color: #3EA055;
-
-
-   text-align:center;
-
-
+.div-1 {
+	background-color: #3A3A3A;
+	width: 60%;
+	height: 60%;
+	margin: 20%;
+	margin-top: 30%;
+	border: 5px;
+	min-height: 200px;
+	overflow: hidden;
+	border: 1px solid;
+	border-color: #3EA055;
+	text-align: center;
 }
-
 
 .testimonials {
-  background-color:#3A3A3A;
-   width:22%;
-height:275px;
-margin-left:39%;
-margin-bottom: 50px;
-border: 5px;
-min-height: 200px;
-text-align:center;
-border: 1px solid;
-border-color: #3EA055;
-overflow: hidden;
-
-
-
-
+	background-color: #3A3A3A;
+	width: 22%;
+	height: 275px;
+	margin-left: 39%;
+	margin-bottom: 50px;
+	border: 5px;
+	min-height: 200px;
+	text-align: center;
+	border: 1px solid;
+	border-color: #3EA055;
+	overflow: hidden;
 }
+
 .testimonials p {
-  margin-top: 50px;
-  float: center;
-  background-color: #3A3A3A;
-  color:#3EA055;
+	margin-top: 50px;
+	float: center;
+	background-color: #3A3A3A;
+	color: #3EA055;
 }
 
 .testimonials button {
-  height: 10px;
-background-image: url('/cBtn.png/');
-background-color: #3A3A3A;
-width: 50px;
-
-
+	height: 10px;
+	background-image: url('/cBtn.png/');
+	background-color: #3A3A3A;
+	width: 50px;
 }
+
 .testimonials h2 {
-  color:#3EA055;
-
+	color: #3EA055;
 }
+
 .previousButton {
-  float: left;
-    height: 100px;
-}
-.nextButton {
-  float:right;
+	float: left;
+	height: 100px;
 }
 
-.description{
-  height: 200px;
+.nextButton {
+	float: right;
+}
+
+.description {
+	height: 200px;
 }
 
 .description img {
-  padding: 5px;
+	padding: 5px;
 }
-.description p {
-  color:#3EA055;
-text-align: left;
 
-  padding-left:5px;
+.description p {
+	color: #3EA055;
+	text-align: left;
+	padding-left: 5px;
 }
 
 button {
-  color: white;
-  border: none;
-  background-color: #3EA055;
-  height: 35px;
-  float: right;
-  margin-right: 25px;
-  cursor: hand;
-  margin-bottom: 15px;
-
-
+	color: white;
+	border: none;
+	background-color: #3EA055;
+	height: 35px;
+	float: right;
+	margin-right: 25px;
+	cursor: hand;
+	margin-bottom: 15px;
 }
+
 button:hover {
-  opacity: .8;
+	opacity: .8;
 }
 
 .footer-div {
-
-  background-color: #3A3A3A;
-  height: 210px;
-  width: 100%;
-bottom: 0;
-position: absolute;
-
-
-
+	background-color: #3A3A3A;
+	height: 210px;
+	width: 100%;
+	bottom: 0;
+	position: absolute;
 }
+
 span {
-  text-align:center;
-   opacity:.6;
-   width:25%;
-   color:#3EA055;
-   background-color: black;
-   font-size: 25px;
-   font-style: italic;
-
-
+	text-align: center;
+	color: #fff;
+	font-size: 60px;
+	font-style: italic;
+	padding: 10px;
+	text-shadow: 2px 2px 2px #000; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
 }
+
+.home-page-text {
+	text-align: center;
+	color: #fff;
+	font-size: 60px;
+	font-style: italic;
+	padding: 10px;
+	text-shadow: 2px 2px 2px #000; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+}
+
 .text-div {
-  color: #f2f2f2;
-  font-size: 15px;
-  position: absolute;
-  top: 8px;
-  width: 100%;
-  text-align: center;
+	color: #f2f2f2;
+	font-size: 15px;
+	position: absolute;
+	margin-top: 15%;
+	width: 100%;
+	text-align: center;
 }
 
-#div-1-header{
-  color:#3EA055;
-  font-family: sans-serif;
-
-
+#div-1-header {
+	color: #3EA055;
+	font-family: sans-serif;
 }
+
 #hb {
-  display: none;
+	display: none;
 }
-
 
 .footer-div p, h2 {
-  color: white;
-  margin-bottom: 0;
-  padding-bottom: 0;
+	color: white;
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
- a {
-  text-decoration: none;
-  color: white;
+
+a {
+	text-decoration: none;
+	color: white;
 }
 
 .footer-div a:hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }
-
-
 
 /* Caption text */
 
-
-
 /* carousel */
-
 .slider {
 	width: 100%;
 	margin: 1em auto;
-
 }
 
 .slider-wrapper {
@@ -246,27 +210,24 @@ span {
 	position: absolute;
 	width: 100%;
 	height: 100%;
+	min-height: 780px;
 	opacity: 0;
 	transition: opacity 3s linear;
 }
 
-.slider-wrapper > .slide:first-child {
+.slider-wrapper>.slide:first-child {
 	opacity: 1;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-
-  .div-1 {
-  width: 98%;
-  margin:1%;
-  font-size: 24px;
-
-
-  }
-
-  .testimonials {
-    width:60%;
-    margin:20%;
-  }
-
+@media only screen and (min-device-width : 320px) and (max-device-width
+	: 480px) {
+	.div-1 {
+		width: 98%;
+		margin: 1%;
+		font-size: 24px;
+	}
+	.testimonials {
+		width: 60%;
+		margin: 20%;
+	}
 }
