@@ -9,14 +9,13 @@
 <link rel="stylesheet" type="text/css"
 	href="styles/desktopStyleSheet.css">
 <script type="text/javascript" src="scripts/carousel.js"></script>
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <!-- Bootstrap -->
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-	crossorigin="anonymous">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
 
 </head>
@@ -26,40 +25,38 @@
 	<!-- Contains entire page -->
 	<div style="min-height: 100%; position: relative" class="main-wrapper">
 
-		<!-- Contains navbar and slider -->
-		<div class="wrap-header">
+		<div class="header-wrapper">
+	<div class="nav-header">		
+	<nav class="nav navbar-inverse" style="width=100%">
+		<div class="container-fluid">
+		
+			<!-- Logo -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					
+				</button>
+				<a href="index.html" class="navbar-brand">CANAAN XPRESS</a>
+			</div>
 
-			<!-- Navbar -->
-			
-
-			
-				<nav class="nav navbar-inverse">
-					<div class="container-fluid">
-						<!-- Logo -->
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle"
-								data-toggle="collapse" data-target="#mainNavbar">
-								<span class="icon-bar"></span> <span class="icon-bar"></span> <span
-									class="icon-bar"></span>
-							</button>
-							<a href="index.html" class="navbar-brand">CANAAN XPRESS</a>
-						</div>
-
-						<!-- Menu Items -->
-						<div class="navbar collapse-collapse" id=mainNavbar>
-							<ul class="nav navbar-nav" style="float: right; margin-right: 12%; transform: rotate(-180deg);">
-								<li style="float: right; transform: rotate(-180deg);"><a href="about.html">ABOUT</a></li>
-								<li style="float: right; transform: rotate(-180deg);"><a href="services.html">SERVICES</a></li>
-								<li style="float: right; transform: rotate(-180deg);"><a href="#">CAREEERS</a></li>
-								<li style="float: right; transform: rotate(-180deg);"><a href="#">GET QUOTE</a></li>
-								<li style="float: right; transform: rotate(-180deg);"><a href="#">AWARDS</a></li>
+			<!-- Menu Items -->
+			<div class="collapse navbar-collapse" id="mainNavBar">
+				<ul class="nav navbar-nav">
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="services.html">SERVICES</a></li>
+					<li><a href="#">CAREEERS</a></li>
+					<li><a href="#">GET QUOTE</a></li>
+					<li><a href="#">AWARDS</a></li>
 								
 								
-							</ul>
-						</div>
-					</div>
-				</nav>		
-				</div>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	</div>
+	</div>
 				
 				
 				<div style="padding-bottom: 220px;">
@@ -75,7 +72,11 @@
 						<br>
 						<p class="home-page-text" style="font-size: 40px;">-Evergreen Shipping Line</p>
 					</div>
-
+					<!-- Div for Buttons -->
+					<div class="button-div">
+						<button type="button">View our Rates</button>
+						<button type="button">Drive for Us</button>
+					</div>
 				</div>
 
 			</div>
