@@ -8,9 +8,11 @@
 	Slideshow.prototype = {
 		init: function() {
 			this.wrapper = this.el.querySelector( ".slider-wrapper" );
-			this.slides = this.el.querySelectorAll( ".slide" );
+			this.slides = this.el.querySelectorAll( ".slide" );			//selects all slides
 			this.previous = this.el.querySelector( ".slider-previous" );
 			this.next = this.el.querySelector( ".slider-next" );
+			this.rateButton = this.el.querySelector( ".rate-button");
+			this.applyButton = this.el.querySelector( ".apply-button");
 			this.index = 0;
 			this.total = this.slides.length;
 			this.timer = null;
@@ -19,13 +21,18 @@
 			this.stopStart();
 		},
 		_slideTo: function( slide ) {
-			var currentSlide = this.slides[slide];
-			currentSlide.style.opacity = 1;
+			var currentSlide = this.slides[slide]; 		//sets current slide to first slide in array
+			currentSlide.style.opacity = 1;				//makes the slide visible
+			rateButton.style.opacity = 1;
+			applyButton.style.opacity = 1;
 
+			//loops through slides and makes sure only the current slide is visible
 			for( var i = 0; i < this.slides.length; i++ ) {
 				var slide = this.slides[i];
 				if( slide !== currentSlide ) {
 					slide.style.opacity = 0;
+					rateButton.style.opacity = 1;
+					applyButton.style.opacity = 1;
 				}
 			}
 		},
