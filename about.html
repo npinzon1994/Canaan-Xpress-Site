@@ -24,62 +24,61 @@
 </head>
 
 <body>
-	<div id="page-container">
-	<div class="header-wrapper">
-		<div class="nav-header">
-			<nav class="nav navbar-inverse" style="">
-				<div class="container-fluid">
 
-					<!-- Logo -->
-					<div class="navbar-header">
 
-						<button type="button" class="navbar-toggle" data-toggle="collapse"
-							data-target="#mainNavBar" style="margin-top: 45px;">
-							<span class="icon-bar"></span> <span class="icon-bar"></span> <span
-								class="icon-bar"></span>
+	<div id="wrapper">
+		<div class="header-wrapper">
+			<div class="nav-header">
+				<nav class="nav navbar-inverse" style="">
+					<div class="container-fluid"  style="text-align: left; max-width: 1170px;">
+						<a href="#" class="btn btn-success" id="menu-toggle" style="float: left;"></a>
+						<!-- Logo -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse"
+									data-target="#mainNavBar" style="margin-top: 45px;">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<div style="margin-top: 20px;">
+								<a href="index.html"><img src="res/truck_logo.png"
+														  class="truck-logo"></a>
+								<p></p>
+								<a href="index.html" class="truck-logo-subtext">CANAAN XPRESS</a>
+							</div>
+						</div>
+						<!-- Menu Items -->
+						<div class="collapse navbar-collapse" id="mainNavBar">
+							<ul class="nav navbar-nav" style="float: right; margin-top: 30px;">
+								<li><a href="about.html">ABOUT</a></li>
+								<li><a href="services.html">SERVICES</a></li>
+								<li><a href="#">CAREEERS</a></li>
+								<li><a href="#">GET QUOTE</a></li>
+								<li><a href="#">AWARDS</a></li>
 
-						</button>
-						<div style="margin-top: 20px;">
-							<a href="index.html"><img src="res/truck_logo.png"
-								class="truck-logo"></a>
-							<p></p>
-							<a href="index.html" class="truck-logo-subtext">CANAAN XPRESS</a>
+
+							</ul>
 						</div>
 					</div>
-					<!-- Menu Items -->
-					<div class="collapse navbar-collapse" id="mainNavBar">
-						<ul class="nav navbar-nav" style="float: right; margin-top: 30px;">
-							<li><a href="about.html">ABOUT</a></li>
-							<li><a href="services.html">SERVICES</a></li>
-							<li><a href="#">CAREEERS</a></li>
-							<li><a href="#">GET QUOTE</a></li>
-							<li><a href="#">AWARDS</a></li>
 
-
-						</ul>
-					</div>
-				</div>
-
-			</nav>
+				</nav>
+			</div>
 		</div>
-	</div>
-	<div class="main-wrapper" style="width: 100%;">
-		
 		<!-- Sidebar -->
-		<div class="sidebar-wrapper">
-			<ul class="sidebar-nav">
+		<div id="sidebar-wrapper">
+			<ul class="sidebar-nav" id="mainSidebar">
 				<li><a href="#">SERVICES</a></li>
 				<li><a href="#">CAREERS</a></li>
 				<li><a href="#">GET A QUOTE</a></li>
 				<li><a href="#">CONTACT US</a></li>
 			</ul>
 		</div>
-		
+
+		<div id="page-content-wrapper">
 		<!-- Main Content -->
-		<div class="container-fluid" style="text-align: left; max-width: 1170px;">
+		<div class="container-fluid">
 			<div class="row">
 				<div class="col-lg-12">
-				<a href="#" class="btn btn-success" id="menu-toggle">Toggle Menu</a>
 				<h1>ABOUT US</h1>
 				<p>Game of as rest time eyes with of this it. Add was music merry
 					any truth since going. Happiness she ham but instantly put departure
@@ -124,9 +123,9 @@
 	
 	<!-- Sidebar Toggle Script -->
 	<script>
-		$(#menu-toggle).click(function(e) {
+		$("#menu-toggle").click(function(e) {
 			e.preventDefault();
-			$("#wrapper").toggleClass("toggled");
+			$("#wrapper").toggleClass("menuDisplayed");
 		});
 	</script>
 
