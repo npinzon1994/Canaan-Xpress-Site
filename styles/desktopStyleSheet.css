@@ -6,6 +6,13 @@ html, body {
 	background-color: #d9d9d9;
 }
 
+body {
+	position: relative;
+	margin: 0;
+	min-height: 100%;
+	overflow-x: hidden;
+}
+
 .page-container {
 	position: relative;
 }
@@ -85,6 +92,8 @@ html, body {
 	padding-left: 12px;
 	float: left;
 }
+
+
 
 #sidebar-wrapper{
 	z-index: 1;
@@ -167,9 +176,9 @@ html, body {
 
 .slide {
 	float: left;
-	/* position: absolute; */
+	position: relative;
+	min-width: 1170px;
 	width: 100%;
-	max-width: 1170px;
 	/* opacity: 0; */
 	transition: opacity 3s linear;
 	filter: brightness(70%);
@@ -202,25 +211,50 @@ html, body {
 .apply-button {
 	position: absolute;
 	top: 350px;
-	right: 380px;
+	right: 45%;
+	left: 55%;
+	bottom: 250px;
 	height: 42px;
 	width: 165px;
 	border-radius: 12px;
 	font-size: 18px;
 	color: #fff;
 	opacity: .85;
+	background: #3EA055;
+	padding-top: 8px;
+}
+
+.apply-button:hover {
+	display: block;
+	text-decoration: none;
+	color: #fff;
 }
 
 .rate-button {
 	position: absolute;
 	top: 350px;
-	right: 565px;
+	right: 63%;
+	left: 37%;
 	height: 42px;
 	width: 165px;
 	border-radius: 12px;
 	font-size: 18px;
 	color: #fff;
 	opacity: .85;
+	background: #3EA055;
+	padding-top: 8px;
+	display: block;
+	text-decoration: none;
+}
+
+.rate-button:hover{
+	display: block;
+	text-decoration: none;
+	color: #fff;
+}
+
+.button-div{
+	position: absolute;
 }
 
 button:hover {
@@ -276,6 +310,21 @@ button:hover {
 
 }
 
+.apply-div {
+	/*border: 1px solid red;*/
+	margin: 0 auto;
+	padding: 100px 0;
+	width: 1170px;
+	line-height: 20px;
+}
+
+#rightDiv a:hover {
+	text-decoration: none;
+}
+
+#rightDiv a:visited {
+	text-decoration: none;
+}
 
 .testimonials {
 	background-color: #3A3A3A;
@@ -365,6 +414,7 @@ span {
 .footer-div {
 	text-align: center;
 	height: 150px;
+
 }
 
 .footer-div p {
@@ -375,7 +425,7 @@ span {
 
 a {
 	text-decoration: none;
-	color: white;
+	color: #FFF;
 }
 
 .footer-div a:hover {
