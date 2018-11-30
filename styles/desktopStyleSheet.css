@@ -1,3 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:500,700');
+
+#cx-logo h1 {
+	font-family: 'Rubik', sans-serif;
+	font-size: 70px;
+	color: #05386B;
+	margin: 0;
+}
+
+#phone img{
+	display: inline-block;
+}
+
+#phone p{
+	display: inline-block;
+}
+
+#email a img {
+	display: inline-block;
+}
+
+#email p{
+	display: inline-block;
+}
+
+#media-icons{
+	float:right;
+}
+
 html, body {
 	margin: 0;
 	padding: 0;
@@ -17,15 +46,41 @@ body {
 	position: relative;
 }
 
+.header-img-container{
+	width: 100%;
+	background: #3EA055;
+}
+
+.inner-img-div{
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1170px;
+	text-align: center;
+}
+
 .header-wrapper {
 	width: 100%;
 	background-color: #222;
-	height: 130px;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0px;
+	z-index: 1;
+	opacity: 0.8;
+	min-width: 792px;
+}
+
+.header-img-container{
+	background: #fff;
+}
+
+@media only screen and (min-device-width: 792px){
+	.header-wrapper{
+		min-width: auto;
+	}
 }
 
 .nav-header {
 	width: 100%;
-	max-width: 1170px;
 	margin: 0 auto;
 }
 
@@ -43,10 +98,10 @@ body {
 
 .navbar-nav {
 	text-fill: #000;
+	margin: 0 auto;
 }
 
 .navbar-nav li a {
-	margin: 20px 17px 10px 17px;
 	font-size: 16px;
 }
 
@@ -112,13 +167,13 @@ body {
 	border: 5px solid green;
 }
 
-#main-wrapper.menuDisplayed #sidebar-wrapper {
-	width: 250px;
-}
+/*#main-wrapper.menuDisplayed #sidebar-wrapper {*/
+	/*width: 250px;*/
+/*}*/
 
-#main-wrapper.menuDisplayed #page-content-wrapper {
-	padding-left: 250px;
-}
+/*#main-wrapper.menuDisplayed #page-content-wrapper {*/
+	/*padding-left: 250px;*/
+/*}*/
 
 .sidebar-nav {
 	padding: 0;
@@ -182,7 +237,7 @@ body {
 	/* opacity: 0; */
 	transition: opacity 3s linear;
 	filter: brightness(70%);
-	margin-top: 80px;
+	margin-top: 130px;
 }
 
 .home-header-top {
