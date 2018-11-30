@@ -27,7 +27,6 @@ body {
 	width: 100%;
 	max-width: 1170px;
 	margin: 0 auto;
-	z-index: 9999;
 }
 
 .container {
@@ -175,82 +174,99 @@ body {
 }
 
 .slide {
-	float: left;
+	/*float: left;*/
 	position: relative;
-	min-width: 1170px;
 	width: 100%;
+	height: 100%;
+	max-height: 600px;
 	/* opacity: 0; */
 	transition: opacity 3s linear;
 	filter: brightness(70%);
-	padding-top: 80px;
+	margin-top: 80px;
 }
 
 .home-header-top {
 	color: #fff;
-	font-size: 60px;
+	font-size: 4vw;
 	font-style: italic;
 	text-shadow: 2px 2px 2px #000; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
 	position: absolute;
-	left: 190px;
-	top: 110px;;
-	resize: auto;
+	left: 20%;
+	right: 20%;
+	top: 17%;
+	bottom: 50%;
+	padding-top: 30px;
+	/*resize: both;*/
 }
 
 .home-header-bottom {
 	color: #fff;
-	font-size: 60px;
+	font-size: 3vw;
 	font-style: italic;
 	padding: 10px;
 	text-shadow: 2px 2px 2px #000; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
 	position: absolute;
-	resize: none;
-	top: 190px;
-	left: 375px;
+	top: 35%;
+	left: 29%;
 }
 
 .apply-button {
 	position: absolute;
-	top: 350px;
-	right: 45%;
-	left: 55%;
-	bottom: 250px;
-	height: 42px;
-	width: 165px;
+	top: 60%;
+	right: 39%;
+	height: 3vw;
+	width: 12vw;
 	border-radius: 12px;
-	font-size: 18px;
 	color: #fff;
 	opacity: .85;
 	background: #3EA055;
 	padding-top: 8px;
+	text-align: center;
+	font-size: 1vw;
 }
 
-.apply-button:hover {
-	display: block;
+.apply-button a{
+	vertical-align: middle;
 	text-decoration: none;
 	color: #fff;
+	display: block;
+}
+
+.apply-button a:hover {
+	display: block;
+	text-decoration: none;
+	color: #e8e8e8;
 }
 
 .rate-button {
 	position: absolute;
-	top: 350px;
+	top: 60%;
 	right: 63%;
-	left: 37%;
-	height: 42px;
-	width: 165px;
+	left: 35%;
+	height: 3vw;
+	width: 12vw;
 	border-radius: 12px;
-	font-size: 18px;
 	color: #fff;
 	opacity: .85;
 	background: #3EA055;
 	padding-top: 8px;
 	display: block;
 	text-decoration: none;
+	text-align: center;
+	font-size: 1vw;
 }
 
-.rate-button:hover{
+.rate-button a{
+	vertical-align: middle;
+	color: #fff;
+	display: block;
+}
+
+.rate-button a:hover{
 	display: block;
 	text-decoration: none;
-	color: #fff;
+	color: #e8e8e8;
+
 }
 
 .button-div{
@@ -259,6 +275,18 @@ body {
 
 button:hover {
 	opacity: 1;
+}
+
+.trans-div{
+	position: absolute;
+	background: #fff;
+	left: 50px;
+	top: 80px;
+	height: 100%;
+	width: 100%;
+	max-width: 900px;
+	max-height: 520px;
+	opacity: 0.8;
 }
 
 /*
@@ -273,6 +301,39 @@ button:hover {
 	text-align: center;
 }
 */
+
+.driver-app-btn:visited{
+	color: #FFF;
+	text-decoration: none;
+}
+
+.driver-app-btn{
+	background: #05386B;
+	margin-left: 155px;
+	font-size: 26px;
+	padding: 12px 50px;
+	color: #FFF;
+	border-radius: 8px;
+	border: 1px solid #fff;
+	text-decoration: none;
+}
+
+.driver-app-btn:hover {
+	background: #e8e8e8;
+	color: #383838;
+	text-decoration: none;
+}
+
+.driver-app-btn:visited:hover{
+	background: #e8e8e8;
+	color: #383838;
+	text-decoration: none;
+}
+.driver-app-btn:before:hover{
+	background: #e8e8e8;
+	color: #383838;
+	text-decoration: none;
+}
 
 #div-1-header {
 	color: #3EA055;
@@ -439,17 +500,7 @@ a {
 	opacity: 1;
 }
 
-/*
-@media only screen and (min-device-width : 320px) and (max-device-width
-	: 480px) {
-	.div-1 {
-		width: 98%;
-		margin: 1%;
-		font-size: 24px;
-	}
-	.testimonials {
-		width: 60%;
-		margin: 20%;
-	}
+
+@media only screen and (min-device-width : 829px) {
+
 }
-*/
