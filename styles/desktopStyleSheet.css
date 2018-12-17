@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
 html, body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
 	height: 100%;
-	background-color: #e8e8e8;
+	background-color: #fff;
 }
 
 body {
@@ -19,14 +21,75 @@ body {
 
 .header-wrapper {
 	width: 100%;
-	background-color: #222;
-	height: 130px;
+	background-color: #fff;
+	position: relative;
+}
+
+.small-icons{
+	position: absolute;
+	left: 187px;
+	top: 8px;
+	z-index: 1;
+}
+
+.small-icons img{
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	margin-right: 6px;
+}
+
+.small-icons a {
+	display: inline-block;
+	color: #000;
+	font-family: 'Lato', sans-serif;
+
+}
+
+.small-icons a:hover, a:active, a:visited, a:focus{
+	display: inline-block;
+	text-decoration: none;
+}
+
+.header-img-container{
+	position: relative;
+}
+
+.navbar-default .container-fluid{
+	padding-right: 0 !important;
+	padding-left: 0 !important;
+	background-color: #61ADF8;
+}
+
+.navbar-collapse{
+	background-color: #61ADF8;
+	width: 700px;
+
+}
+
+/*This contains the nav-header unordered list -- This is where we adjust the vertical height*/
+.navbar-nav {
+	height: 36px;
+	margin-bottom: 20px;
+	right: 20px;
+	position: absolute;
 }
 
 .nav-header {
-	width: 100%;
-	max-width: 1170px;
-	margin: 0 auto;
+	width: 700px;
+	position: absolute;
+	top: 152px;
+	right: 0px;
+}
+
+.navbar-nav li a {
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	-webkit-text-fill-color: #fff;
+	letter-spacing: 1px;
+}
+.navbar-nav li a:hover {
+	-webkit-text-fill-color: #2C3E50;
 }
 
 .container {
@@ -41,36 +104,25 @@ body {
 }
 
 
-.navbar-nav {
-	text-fill: #000;
-}
-
-.navbar-nav li a {
-	margin: 20px 17px 10px 17px;
-	font-size: 16px;
-}
 
 
-.truck-logo {
-	height: 45px;
-	width: 135px;
-	margin-left: 15px;
-}
 
 .truck-logo-subtext {
-	color: #fff;
+	color: #777;
 	font-size: 20px;
 }
 
 .truck-logo-subtext:hover {
-	color: #fff;
-	background: #222;
+	color: #777;
 	text-decoration: none;
 }
 
 
 #main-wrapper {
 	background-color: #d9d9d9;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1170px;
 }
 
 #main {
@@ -83,7 +135,8 @@ body {
 }
 
 .main-img-container {
-	position: relative;
+	margin: 0 auto;
+	text-align: center;
 }
 
 .left-div {
@@ -95,7 +148,6 @@ body {
 
 
 #sidebar-wrapper{
-	z-index: 1;
 	position: absolute;
 	width: 0;
 	height: 100%;
@@ -163,26 +215,15 @@ body {
 /*background: #fff;*/
 /*}*/
 
-.slider {
-	width: 100%;
-	margin: 0 auto;
-}
-
-.slider-wrapper {
-	width: 100%;
-	height: auto;
-}
-
 .slide {
-	/*float: left;*/
-	position: relative;
 	width: 100%;
-	height: 100%;
+	max-width: 1110px;
 	max-height: 600px;
+	text-align: center;
 	/* opacity: 0; */
 	transition: opacity 3s linear;
 	filter: brightness(70%);
-	margin-top: 80px;
+	margin-top: 30px;
 }
 
 .home-header-top {
@@ -500,7 +541,3 @@ a {
 	opacity: 1;
 }
 
-
-@media only screen and (min-device-width : 829px) {
-
-}
