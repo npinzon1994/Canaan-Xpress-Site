@@ -15,6 +15,17 @@ body {
 	overflow-x: hidden;
 }
 
+a {
+	text-decoration: none;
+	color: #FFF;
+	white-space: nowrap;
+}
+
+a:visited{
+	text-decoration: none;
+	color: #fff;
+}
+
 .page-container {
 	position: relative;
 }
@@ -58,13 +69,14 @@ body {
 	text-align: center;
 	margin-top: 30px;
 	height: 340px;
+	width: 325px;
+}
+
+.column-div a {
+	font-size: 16px;
 }
 
 .column-div a:hover {
-	text-decoration: none;
-}
-
-.column-div a:visited {
 	text-decoration: none;
 }
 
@@ -73,6 +85,7 @@ body {
 	text-align: center;
 	font-family: 'Lato', sans-serif;
 	line-height: 30px;
+	font-size: 20px;
 }
 
 .click-here-btn {
@@ -83,6 +96,8 @@ body {
 	border-radius: 50px;
 	font-family: 'Lato', sans-serif;
 	text-align: center;
+	height: 45px;
+	width: 236px;
 }
 
 .click-here-btn:hover{
@@ -91,7 +106,22 @@ body {
 	color: #383838 !important;
 	border-color: #e8e8e8;
 	text-decoration: none;
+	height: 45px;
+	width: 236px;
 }
+
+.click-here-btn:active{
+	height: 45px;
+	width: 236px;
+}
+
+.click-here-btn:visited {
+	height: 45px;
+	width: 236px;
+	text-decoration: none;
+
+}
+
 
 .small-icons a:hover, a:active, a:visited, a:focus{
 	display: inline-block;
@@ -626,21 +656,83 @@ button:hover {
 	float: right;
 }
 
-button {
-	color: white;
-	border: none;
-	background-color: #3EA055;
-	height: 35px;
-	float: right;
-	margin-right: 25px;
-	cursor: hand;
-	margin-bottom: 15px;
+#contactForm{
+	background-color: #d9d9d9;
 }
+
+#contactForm p {
+	padding: 20px 0 0 20px;
+}
+
+#contactForm input[type=text] {
+	width: 300px;
+	padding: 12px 20px;
+	margin: 8px 0 8px 30px;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+
+#contactForm select {
+	width: 300px;
+	padding: 12px 20px;
+	margin: 8px 0 8px 30px;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+
+#contactForm textarea {
+	width: 634px;
+	padding: 12px 20px;
+	margin: 8px 0 8px 30px;
+	box-sizing: border-box;
+	resize: vertical;
+}
+
+#holiday-div {
+	 background-color: #d9d9d9;
+	 text-align: center;
+	 height: 620px;
+}
+
+#holiday-div h2 {
+	font-family: 'Lato', sans-serif;
+	padding: 20px 0;
+}
+
+table {
+	border: 2px solid #383838;
+	text-align: center;
+	margin-left: 60px;
+	width: 600px;
+	height: 500px;
+}
+
+tr {
+	border: 2px solid #383838;
+}
+
+td {
+	border: 2px solid #383838;
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+/*button {*/
+	/*color: white;*/
+	/*border: none;*/
+	/*background-color: #3EA055;*/
+	/*height: 35px;*/
+	/*float: right;*/
+	/*margin-right: 25px;*/
+	/*cursor: hand;*/
+	/*margin-bottom: 15px;*/
+/*}*/
 
 
 .footer-div {
 	background-color: #031f3a;
-	height: 240px;
+	height: 250px;
 	width: 100%;
 	position: relative;
 	margin-bottom: 0px;
@@ -710,11 +802,6 @@ span {
 
 #hb {
 	display: none;
-}
-
-a {
-	text-decoration: none;
-	color: #FFF;
 }
 
 .footer-div a:hover {
