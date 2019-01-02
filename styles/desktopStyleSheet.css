@@ -688,6 +688,84 @@ button:hover {
 	resize: vertical;
 }
 
+#rate-request-form{
+	background-color: #d9d9d9;
+	position: relative;
+	height: 1200px;
+}
+
+#rate-request-form #checkbox-div label{
+	font-family: 'Lato', sans-serif;
+	font-weight: normal;
+	font-size: 16px;
+}
+
+#rate-request-form #checkbox-div input[type=checkbox]{
+	margin-left: 46px;
+	height: 15px;
+	width: 15px;
+	margin-right: 6px;
+}
+
+#checkbox-div{
+	background-color: #e8e8e8;
+	border: 1px solid darkgrey;
+	margin: 0 55px 0 30px;
+	width: 350px;
+	padding-bottom: 20px;
+}
+
+#add-charges{
+	position: absolute;
+	bottom: 180px;
+	right: 40px;
+	background-color: #e8e8e8;
+	border: 1px solid darkgrey;
+	width: 260px;
+}
+
+#add-charges input {
+	margin: 7px 0 7px 23px;
+}
+
+#add-charges label {
+	font-weight: normal;
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+}
+
+.under-hazmat{
+
+}
+
+#rate-request-form p {
+	padding: 20px 0 0 20px;
+}
+
+#rate-request-form input[type=text] {
+	width: 300px;
+	padding: 12px 20px;
+	margin: 8px 0 8px 30px;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+
+#rate-request-form select {
+	width: 300px;
+	padding: 12px 20px;
+	margin: 8px 0 8px 30px;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+
+#rate-request-form textarea {
+	width: 634px;
+	padding: 12px 20px;
+	margin: 8px 0 8px 30px;
+	box-sizing: border-box;
+	resize: vertical;
+}
+
 #holiday-div {
 	 background-color: #d9d9d9;
 	 text-align: center;

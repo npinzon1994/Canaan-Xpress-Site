@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Request Rate | Canaan Xpress Official Site</title>
+
+    <link rel="icon" href="res/cxlogo.png">
+    <!-- <link rel="stylesheet" media="screen and (min-width: 100px) and (max-width: 380px)" type="text/css" href="styles/mobileStyleSheet.css"> -->
+    <link rel="stylesheet" type="text/css"
+          href="styles/desktopStyleSheet.css">
+    <script type="text/javascript" src="scripts/carousel.js"></script>
+    <script type="text/javascript" src="scripts/carousel.js"></script>
+
+    <!-- Bootstrap -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+          href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script
+            src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+
+<!-- Contains entire page -->
+<div id="main-wrapper">
+    <div class="header-wrapper">
+        <div class="small-icons">
+            <img src="res/phone-icon.jpg" alt="call us">
+            <a href="tel:5168872940">(516) 887-2940</a>
+            <img src="res/email-icon.png" alt="email us" style="height: 33px; width: 33px; margin-left: 40px;">
+            <a href="mailto:sales@canaanxpress.com">sales@canaanxpress.com</a>
+        </div>
+        <div class="header-img-container">
+            <img src="res/cx-header-logo-blue-bottom.png">
+        </div>
+        <div class="nav-header">
+            <nav class="nav navbar-default" style="">
+                <div class="container-fluid">
+
+                    <!-- Logo -->
+                    <div class="navbar-header">
+
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target="#mainNavBar" style="margin-top: 45px;">
+                            <span class="icon-bar"></span> <span class="icon-bar"></span> <span
+                                class="icon-bar"></span>
+
+                        </button>
+                    </div>
+                    <!-- Menu Items -->
+                    <div class="collapse navbar-collapse" id="mainNavBar">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="services.html">SERVICES</a></li>
+                            <li><a href="rateRequestPage.html">GET RATE QUOTE</a></li>
+                            <!--<li><a href="index.html">JOIN OUR TEAM</a></li>-->
+                            <!--<li><a href="index.html">GET QUOTE</a></li>-->
+                            <li><a href="holidays.html">HOLIDAYS</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+    </div>
+
+
+    <div id="main">
+        <div id="left-main">
+            <img src="res/truck-logo-withfont.png" alt="Canaan Xpress Truck Logo" id="">
+            <p>This site is in its early stages and still under construction. If you have any questions, feel free to contact us!</p>
+
+            <div class="column-div">
+                <h3 class="column-div-text">Need a rate quote?</h3>
+                <br><br>
+                <a class="click-here-btn"
+                   href="https://docs.google.com/forms/d/1436L1AACkYAqjx1udMtVCEPWVJJqFBPSxafQBJRkwEk/edit"
+                   target="_blank">
+                    GET RATE QUOTE
+                </a>
+                <br><br>
+                <h3 class="column-div-text">We'll look over your request and get back to you soon!</h3>
+
+            </div>
+
+            <div class="column-div">
+                <h3 class="column-div-text">Want to make more money?</h3>
+                <br><br>
+                <a class="click-here-btn"
+                   href="https://docs.google.com/forms/d/1_DpbN7hOWQwDjTrNMWR--AUhpG_p2bEj45kjDvBb8-I/edit"
+                   target="_blank">
+                    COME DRIVE FOR US
+                </a>
+                <br><br>
+                <h3 class="column-div-text">Fill out an application and join the CX team!</h3>
+
+            </div>
+        </div>
+        <div id="right-main">
+
+            <div class="main-img-container">
+                <img src="res/evg-main-img.jpg" alt="First" class="slide"/>
+
+                <h2 class="home-header-top">Site Under Construction</h2>
+                <h2 class="home-header-contact">Contact Us</h2>
+                <h2 class="home-header-phone">(516) 887-2940</h2>
+                <h2 class="home-header-email"><a href="mailto:sales@canaanxpress.com" style="color: #fff;">sales@canaanxpress.com</a></h2>
+
+            </div>
+
+            <div class="main-text-container">
+
+                <form action="scripts/rateRequestForm_handler.php" id="rate-request-form" method="post">
+                    <h2 style="text-align: center; font-family: 'Lato', sans-serif; padding: 20px 0 20px 0; margin-top: 40px; border-bottom: 1px solid #777; background-color: #6b102a; color: #fff;">Request a Rate</h2>
+                    <p style="color: #6b102a;">* = required field</p>
+                    <p style="margin: 0 0 0 12px;">Contact Information</p>
+                    <hr style="width: 189px; margin-left: 32px; margin-top: 10px; border-color: #777777;">
+                    <span style="color: #6b102a; padding-left: 20px;">*</span> <input style="margin-left: 0;" type="text" name="email" placeholder="Email" required>
+                    <span style="color: #6b102a; padding-left: 20px;">*</span><input type="text" name="name" placeholder="Name" style="margin-left: 4px;" required><br>
+                    <span style="color: #6b102a; padding-left: 20px;">*</span><input type="text" name="companyName" placeholder="Company Name" style="margin-left: 4px;" required>
+                    <span style="color: #6b102a; padding-left: 20px;">*</span><input type="text" name="phone" placeholder="Phone (no special characters)" style="margin-left: 4px;" required> <br>
+
+
+                    <p style="margin: 0 0 0 12px;">Pickup Location Information</p>
+                    <hr style="width: 255px; margin-left: 32px; margin-top: 10px; border-color: #777777;">
+                    <span style="color: #6b102a; padding-left: 20px;">*</span><input type="text" name="city" placeholder="City" style="width: 188px; margin-left: 4px;" required>
+                    <span style="color: #6b102a; padding-left: 20px;">*</span><select name="states" style="width: 188px; margin-left: 4px;" required>
+
+                        <option value="">(Select State)</option>
+                        <option value="alabama">Alabama</option>
+                        <option value="alaska">Alaska</option>
+                        <option value="arizona">Arizona</option>
+                        <option value="arkansas">Arkansas</option>
+                        <option value="california">California</option>
+                        <option value="colorado">Colorado</option>
+                        <option value="connecticut">Connecticut</option>
+
+                        <option value="delaware">Delaware</option>
+                        <option value="florida">Florida</option>
+                        <option value="georgia">Georgia</option>
+                        <option value="hawaii">Hawaii</option>
+                        <option value="idaho">Idaho</option>
+                        <option value="illinois">Illinois</option>
+                        <option value="indiana">Indiana</option>
+
+                        <option value="iowa">Iowa</option>
+                        <option value="kansas">Kansas</option>
+                        <option value="kentucky">Kentucky</option>
+                        <option value="louisiana">Louisiana</option>
+                        <option value="maine">Maine</option>
+                        <option value="maryland">Maryland</option>
+                        <option value="massachussetts">Massachussetts</option>
+                        <option value="michigan">Michigan</option>
+
+                        <option value="minnesota">Minnesota</option>
+                        <option value="mississippi">Mississippi</option>
+                        <option value="missouri">Missouri</option>
+                        <option value="montana">Montana</option>
+                        <option value="nebraska">Nebraska</option>
+                        <option value="nevada">Nevada</option>
+
+                        <option value="nh">New Hampshire</option>
+                        <option value="nj">New Jersey</option>
+                        <option value="nm">New Mexico</option>
+                        <option value="ny">New York</option>
+                        <option value="nc">North Carolina</option>
+                        <option value="nd">North Dakota</option>
+
+                        <option value="ohio">Ohio</option>
+
+                        <option value="oklahoma">Oklahoma</option>
+                        <option value="oregon">Oregon</option>
+                        <option value="pennsylvania">Pennsylvania</option>
+                        <option value="rhodeIsland">Rhode Island</option>
+                        <option value="sc">South Carolina</option>
+                        <option value="sd">South Dakota</option>
+                        <option value="tennessee">Tennessee</option>
+                        <option value="texas">Texas</option>
+
+                        <option value="utah">Utah</option>
+                        <option value="vermont">Vermont</option>
+                        <option value="virginia">Virginia</option>
+                        <option value="washington">Washington</option>
+                        <option value="wv">West Virginia</option>
+                        <option value="wisconsin">Wisconsin</option>
+                        <option value="wyoming">Wyoming</option>
+
+                    </select>
+                    <span style="color: #6b102a; padding-left: 20px;">*</span><input type="text" name="zip" placeholder="Zip Code" style="width: 189px; margin-left: 4px;" required><br>
+
+                    <p style="margin: 0 0 0 12px;">Description/Dimensions</p>
+                    <hr style="width: 222px; margin-left: 32px; margin-top: 10px; border-color: #777777;">
+                    <input type="text" name="weight" placeholder="Weight (in lbs)" style="width: 350px; margin-bottom: 20px;">
+
+                    <div id="checkbox-div">
+                        <span style="margin:10px 0 0 20px; font-style: italic; display: inline-block;">(Check all that apply.)</span><br>
+                        <input id="checkbox" type="checkbox" name="palletized" value="palletized" style="margin-top: 10px;"><label for="checkbox" style="margin-right: 23px;">Palletized</label> <input type="text" placeholder="# skids" style="width: 120px;" id="skids"><br>
+                        <input id="checkbox2" type="checkbox" name="floorLoaded" value="floorLoaded"><label for="checkbox">Floor Loaded</label> <input type="text" placeholder="# pallets" style="width: 120px;" id="pallets">
+                    </div>
+                    <div id="add-charges">
+                        <p style="margin: 0 15px 10px 0;">Additional Charges</p>
+                        <hr style="border-color: #777; width: 183px; margin-top: 0px; margin-left: 17px;">
+                        <input type="checkbox" name="add-charges" value="overweight" id="overweight"> <label for="overweight">Overweight</label><br>
+                        <input type="checkbox" name="add-charges" value="drop-and-pick" id="drop-and-pick"> <label for="drop-and-pick">Drop and Pick</label><br>
+                        <input type="checkbox" name="add-charges" value="reefer" id="reefer"> <label for="reefer">Reefer</label><br>
+                        <input type="checkbox" name="add-charges" value="open-top" id="open-top"> <label for="open-top">Open Top</label><br>
+                        <input type="checkbox" name="add-charges" value="flat-rack" id="flat-rack"> <label for="flat-rack">Flat Rack</label><br>
+                        <input type="checkbox" name="add-charges" value="hazmat" id="hazmat"> <label for="hazmat">Hazmat</label><br>
+                        <input type="text" name="class" placeholder="Class" style="width: 100px; margin-left: 23px;">
+                        <input type="text" name="imco" placeholder="IMCO #" style="width: 100px; margin: 0 0 0 10px;"><br>
+                        <textarea name="description" placeholder="Description" style="margin: 5px 0 10px 23px; width: 214px;"></textarea>
+
+                    </div>
+                    <input type="text" name="ship-line" placeholder="Shipping Line  (If Known)" style="margin: 20px 0 20px 30px; width: 350px;"><br>
+                    <select name="terminals" style="margin: 0 0 14px 30px; width: 350px;">
+                        <option value="" name="blank">Terminal (If Known)</option>
+                        <option value="maher" name="maher">Maher</option>
+                        <option value="pnct" name="pnct">PNCT</option>
+                        <option value="global-bayonne" name="bayonne">GCT Bayonne/Global</option>
+                        <option value="nyct-howland" name="nyct">GCT NY/NYCT</option>
+                        <option value="apm" name="apm">APM (Sealand)</option>
+                        <option value="brooklyn-redhook" name="redhook">Brooklyn Red Hook</option>
+
+                    </select><br>
+                    <div style="position: absolute; bottom: 0px; left: 0px;">
+                        <button type="submit" style="margin: 10px 10px 20px 30px; width: 163px; height: 40px; font-family: 'Lato', sans-serif; background-color: #6b102a; color: #fff; border-style: none;">Submit</button>
+                        <button type="reset" style="margin: 10px 10px 20px 10px; width: 163px; height: 40px; font-family: 'Lato', sans-serif; background-color: #6b102a; color: #fff;  border-style: none;">Reset</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="footer-div">
+
+            <div>
+                <img src="res/footer-circle-logo.png" alt="Canaan Xpress Circle Logo" id="footer-img">
+                <p id="address2">Phone: (516) 887-2940</p>
+                <p id="address3">Fax: (973) 710-4654 </p>
+                <p id="address1">60 S. Franklin Ave. Valley Stream, NY 11580</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+</body>
+
+</html>
